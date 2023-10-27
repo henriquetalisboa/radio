@@ -1,0 +1,162 @@
+body {
+    max-width: 100%; /* Evita que o conteúdo seja mais largo que a janela do navegador */
+    background-color: #ececed;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    margin: 0;
+    overflow-x: hidden; /* Esconde a barra de rolagem horizontal */
+
+}
+
+
+/* Adicione um estilo para a navbar cinza */
+.contact-bar {
+    background-image: url(/img/contactbar.png);
+    color: #cccccc;
+    width: 100%; /* Define a largura para preencher toda a largura da página */
+    max-width: 100%;
+    padding: 16px;
+    position: flex; /* Mantém a barra no topo da página */
+    top: 0; /* Alinha a barra ao topo da página */
+    left: 0; /* Alinha a barra à esquerda da página */
+    z-index: 999; /* Define uma alta camada z-index para que fique sobre outros elementos */
+
+}
+
+.navbar {
+    overflow: hidden;
+    background-image: url(/img/nav-bar.png);
+    width: 100%;
+    padding: 9px;
+    display: flex; /* Usando flex para alinhar itens à direita */
+    justify-content: flex-end; /* Alinha os itens à direita */
+}
+
+.navbar a {
+    float: left;
+    display: flex;
+    color: #ffffff;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: rgb(100, 92, 23);
+}
+
+
+
+.header {
+    flex: 1;
+}
+
+.audio-container {
+    flex: 1;
+}
+
+main {
+    padding-top: 10px;
+    max-width: 100%;
+    width: 80%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center; /* Para centralizar horizontalmente os itens */
+}
+
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    padding-top: 0px;
+    color: #6f6f6f;
+
+}
+
+.title {
+    padding-top: 0;
+    color: #abaaaa;
+}
+
+.slogan {
+    color: #abaaaa;
+    padding-top: 0px;
+    font-size: 22px;
+}
+
+.logo {
+    max-width: 250px;
+    display: block;
+    margin: 0 auto;
+
+
+}
+
+
+
+
+
+#audio-player {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    align-items: center;
+}
+
+/* Estilize o rodapé para fixá-lo na parte inferior */
+.footer {
+    text-align: center;
+    background-image: url(/img/footer.png);
+    color: #ffffff;
+    position: flex;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+.credit {
+text-align: right;
+font-size: 11px;
+}
+
+
+
+/* barra de rolagem
+/* Estilize a barra de rolagem */
+body::-webkit-scrollbar {
+    width: 3px; /* Largura da barra de rolagem */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #888; /* Cor do indicador da barra de rolagem */
+    border-radius: 4px; /* Borda arredondada para o indicador da barra de rolagem */
+    opacity: 0%;
+
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Cor do indicador da barra de rolagem quando passar o mouse */
+}
+
+
+.hidden {
+    opacity: 0;
+    transition: opacity 1s; /* Define uma transição suave para a propriedade de opacidade */
+  }
+
+
+.animated-text {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 1s, transform 1s;
+}
+
+
+.fade-in {
+    opacity: 1;
+    transform: translateX(0);
+  }
