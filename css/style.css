@@ -14,7 +14,7 @@ body {
 
 /* Adicione um estilo para a navbar cinza */
 .contact-bar {
-    background-image: url(/img/contactbar.png);
+    background-color: #555;
     color: #cccccc;
     width: 100%; /* Define a largura para preencher toda a largura da página */
     max-width: 100%;
@@ -28,7 +28,7 @@ body {
 
 .navbar {
     overflow: hidden;
-    background-image: url(/img/nav-bar.png);
+    background-color: #6f6f6f;
     width: 100%;
     padding: 9px;
     display: flex; /* Usando flex para alinhar itens à direita */
@@ -109,7 +109,7 @@ h1 {
 /* Estilize o rodapé para fixá-lo na parte inferior */
 .footer {
     text-align: center;
-    background-image: url(/img/footer.png);
+    background-color: #888;
     color: #ffffff;
     position: flex;
     bottom: 0;
